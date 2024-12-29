@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+
+    <color name="text_black">#FF000000</color>
+    <color name="text_grey">#B0B0B0</color>
+    <color name="text_white">#FFFFFF</color>
+
     <color name="white">#FFFFFFFF</color>
     <color name="background_color">#40407a</color>
+
     <color name="text_color">#FFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="button_primary">#00b0ff</color>
+    <color name="button_secondary">#00e5ff</color>
+
+
 </resources>

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     android:focusableInTouchMode="true">
 
@@ -19,18 +19,25 @@
         android:id="@+id/nameTextAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textColorHint="#808080"
         android:hint="Name" />
+
 
     <EditText
         android:id="@+id/phoneTextAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textColorHint="#808080"
         android:hint="Phone" />
 
     <EditText
         android:id="@+id/emailTextAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textColorHint="#808080"
         android:hint="Email" />
 
     <Button

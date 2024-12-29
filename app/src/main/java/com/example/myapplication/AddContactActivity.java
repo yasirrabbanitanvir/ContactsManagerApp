@@ -46,7 +46,6 @@ public class AddContactActivity extends AppCompatActivity {
             String addPhone = phoneBox != null && phoneBox.getText() != null ? phoneBox.getText().toString().trim() : "";
             String addEmail = emailBox != null && emailBox.getText() != null ? emailBox.getText().toString().trim() : "";
 
-
             Log.d(TAG, "Inputs - Name: " + addName + ", Phone: " + addPhone + ", Email: " + addEmail);
 
             if (addName.isEmpty()) {
@@ -59,6 +58,12 @@ public class AddContactActivity extends AppCompatActivity {
 
             if (db == null) {
                 Toast.makeText(AddContactActivity.this, "Database not initialized", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            // Check for duplicates
+            if (isDuplicate(addName, addPhone, addEmail)) {
+                Toast.makeText(AddContactActivity.this, "Duplicate contact found. Please use different details.", Toast.LENGTH_SHORT).show();
                 return;
             }
 
@@ -82,6 +87,26 @@ public class AddContactActivity extends AppCompatActivity {
         // Back button logic
         Button backButton = findViewById(R.id.backButtonAdd);
         backButton.setOnClickListener(v -> goHome());
+    }
+
+    private boolean isDuplicate(String name, String phone, String email) {
+        Cursor cursor = db.query(
+                ContactsDbHelper.TABLE,
+                null,
+                ContactsDbHelper.COLUMN_NAME + "=? OR " +
+                        ContactsDbHelper.COLUMN_PHONE + "=? OR " +
+                        ContactsDbHelper.COLUMN_EMAIL + "=?",
+                new String[]{name, phone, email},
+                null,
+                null,
+                null
+        );
+
+        boolean isDuplicate = cursor != null && cursor.getCount() > 0;
+        if (cursor != null) {
+            cursor.close();
+        }
+        return isDuplicate;
     }
 
     private void goHome() {
