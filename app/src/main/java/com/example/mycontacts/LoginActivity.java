@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.mycontacts;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
