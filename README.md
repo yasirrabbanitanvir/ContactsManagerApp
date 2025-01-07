@@ -4,7 +4,7 @@
 
 Contacts Manager is a simple Android application that allows users to conveniently store and manage their contacts. It provides basic Create, Read, Update, and Delete (CRUD) operations for contact management. The app utilizes various activities to handle different functionalities and employs SQLite as the underlying database for data storage. With Contacts Manager, users can easily add, view, edit, and delete contacts, making it a useful tool for organizing and accessing important contact information.
 
-<img src="https://github.com/user-attachments/assets/f0642e9b-eb45-4fff-8a65-170ea891af67" alt="Screenshot 1" width="400" />
+<img src="https://github.com/user-attachments/assets/f0642e9b-eb45-4fff-8a65-170ea891af67" alt="Screenshot 1" />
 
 <img src="https://github.com/user-attachments/assets/391e05a0-09fd-4ba9-b5c2-97cf57abb4a2" alt="Screenshot 2" width="400" />
 
