@@ -6,6 +6,8 @@ Contacts Manager is a simple Android application that allows users to convenient
 
 <img src="https://github.com/user-attachments/assets/f0642e9b-eb45-4fff-8a65-170ea891af67" alt="Screenshot 1" />
 
+### App Screenshots:
+
 <img src="https://github.com/user-attachments/assets/6472ce62-1527-499e-b8f9-9b901d464899" alt="Screenshot 5" width="400" />
 
 <img src="https://github.com/user-attachments/assets/04cd9dcb-0a04-474c-9fc6-909aa5bdb027" alt="Screenshot 4" width="400" />
